@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JS Accordion</title>
+        <style>
+            html {
+                width: 100%;
+                height: 100%;
+                perspective: 900;
+                background-color: #ccc;
+                font-family: sans-serif;
+                color: #000;
+            }
+
+            body {
+                background-color: #fff;
+                max-width: 450px;
+                padding: 30px;
+                margin: 0 auto;
+            }
+
+            .accordion-item__title {
+                box-sizing: border-box;
+                display: block;
+                padding: 0.5em;
+                background: #ccc;
+                margin-top: 1px;
+            }
+
+            .accordion-item__data {
+                box-sizing: border-box;
+                overflow: hidden;
+                padding: 1em;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <dl class="accordion">
+            <dt class="accordion-item__title accordion-item--open">Title</dt>
+            <dd class="accordion-item__data">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis aliquam eius culpa cumque fugiat, iste voluptas recusandae odio, iusto earum, quibusdam, harum maiores nesciunt commodi perferendis dignissimos omnis voluptate similique.
+            </dd>
+            <dt class="accordion-item__title accordion-item--open">Title</dt>
+            <dd class="accordion-item__data">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis aliquam eius culpa cumque fugiat, iste voluptas recusandae odio, iusto earum, quibusdam, harum maiores nesciunt commodi perferendis dignissimos omnis voluptate similique.
+            </dd>
+            <dt class="accordion-item__title accordion-item--open">Title</dt>
+            <dd class="accordion-item__data">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis aliquam eius culpa cumque fugiat, iste voluptas recusandae odio, iusto earum, quibusdam, harum maiores nesciunt commodi perferendis dignissimos omnis voluptate similique.
+            </dd>
+            <dt class="accordion-item__title accordion-item--open">Title</dt>
+            <dd class="accordion-item__data">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis aliquam eius culpa cumque fugiat, iste voluptas recusandae odio, iusto earum, quibusdam, harum maiores nesciunt commodi perferendis dignissimos omnis voluptate similique.
+            </dd>
+        </dl>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script src="accordion.js"></script>
+        <script>
+            $('.accordion').accordion();
+        </script>
+    </body>
+</html>
